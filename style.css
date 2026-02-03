@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding : 0;
+    box-sizing: border-box;
+    font-weight: 500px;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: orangered;
+}
+.mod {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    width: 75vw;
+    font-family:monospace;
+    background-color: yellow;
+    border-radius: 25px;
+    position: relative;
+}
+
+.mod > h1 {
+    position: absolute;
+    top: 10vh;
+}
+
+.note {
+    position: absolute;
+    top: 15vh;
+}
+
+.form {
+    height: 35%;
+    position: absolute;
+    top: 20vh;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+    padding: 3vmax;
+    /* background-color: red; */
+}
+   
+
+.input-together {
+    border: 1px solid black;
+    border-radius: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    
+}
+
+.input-number {
+    display: flex;
+    justify-content: space-between;
+    padding: 1vh;
+    width: 86%;
+    align-items: center;
+    font-size: 1rem;
+
+}
+
+.input-number > input {
+    padding: 0.4rem;
+    border-radius: 10px;
+}
+
+.input-number > label {
+   
+    padding: 2px;
+    font-weight: 600;
+}
+
+#submit-btn {
+    position: absolute;
+    top:  calc(3vmax + 2rem + 4vh + 4px + 2vh + 2rem);
+    padding: 1vh;
+    border-radius: 10px;
+    transition: all 0.7s ease;
+}
+
+#submit-btn:hover {
+    box-shadow: 3px 3px 12px black;
+    transform: translateX(3px);
+}
+
+.result {
+    background-color: rgb(58, 70, 141); 
+    height: 15%;
+    width: 70%;
+    position: relative;
+    top: 15vh;
+    padding: 3vmax;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    
+    
+}
+
+.result > h6 {
+    position: relative;
+    top: -2vh;
+    left: -35%;
+    color: white;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.result > #result {
+    color: white;
+    font-size: 3vh;
+}
+
+
+@media (max-width: 768px) {  /* This part is written by Sahil */
+
+    body {
+        height: auto;
+        padding: 1rem;
+    }
+
+    .mod {
+        width: 95vw;
+        height: auto;
+        padding: 2rem 1rem;
+        border-radius: 16px;
+    }
+
+    .mod>h1 {
+        position: static;
+        margin-bottom: 0.5rem;
+        font-size: 1.8rem;
+    }
+
+    .note {
+        position: static;
+        margin-bottom: 1rem;
+        text-align: center;
+        font-size: 0.9rem;
+    }
+
+    .form {
+        position: static;
+        width: 100%;
+        height: auto;
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .input-together {
+        padding: 1rem;
+    }
+
+    .input-number {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.4rem;
+        font-size: 1rem;
+    }
+
+    .input-number>input {
+        width: 100%;
+        padding: 0.6rem;
+        font-size: 1rem;
+    }
+
+    #submit-btn {
+        position: static;
+        width: 100%;
+        padding: 0.7rem;
+        font-size: 1rem;
+        margin-top: 1rem;
+    }
+
+    .result {
+        position: static;
+        width: 100%;
+        height: auto;
+        margin-top: 1.5rem;
+        padding: 1.2rem;
+        font-size: 1rem;
+    }
+
+    .result>h6 {
+        position: static;
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+        align-self: flex-start;
+    }
+
+    .result>#result {
+        font-size: 1rem;
+        text-align: center;
+    }
+}
+
+
+
